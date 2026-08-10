@@ -6,10 +6,12 @@ AppTelepath lets AI coding agents inspect and debug an iOS app through the hoste
 
 ## Install
 
-Published releases are installed through CocoaPods:
+The public Beta can be installed directly from the published podspec:
 
 ```ruby
-pod 'Telepath', '~> 2.1', :configurations => ['Debug']
+pod 'Telepath',
+    :podspec => 'https://raw.githubusercontent.com/PsionicLab/AppTelepath-iOS/main/Telepath.podspec',
+    :configurations => ['Debug']
 ```
 
 Then start the SDK with the workspace token shown in the AppTelepath console:
