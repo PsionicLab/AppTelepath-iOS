@@ -1,0 +1,24 @@
+AppTelepath Proprietary License
+
+Copyright (c) 2026 Yibi AI LLC. All rights reserved.
+
+The AppTelepath source code and associated documentation in this repository
+are proprietary. No license, express or implied, is granted to copy, modify,
+merge, publish, distribute, sublicense, sell, or create derivative works from
+them, except under a separate written agreement with the copyright holder.
+
+Yibi AI LLC grants recipients of an official AppTelepath SDK binary a limited,
+non-exclusive, non-transferable license to reproduce and integrate the
+unmodified binary into authorized development and testing builds, use those
+builds with the official hosted AppTelepath service, and distribute those
+builds solely to authorized testers as permitted by the accompanying SDK
+documentation. This grant does not permit distributing the SDK as a standalone
+product. Use of the hosted service remains subject to the AppTelepath Terms of
+Service.
+
+Third-party components remain governed by their respective licenses. Required
+third-party notices must accompany applicable binary distributions; see the
+accompanying THIRD-PARTY-NOTICES.md.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
