@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Telepath"
-  spec.version      = "2.1.2"
+  spec.version      = "2.1.3"
   spec.summary      = "Telepath 的 iOS 二进制 SDK。"
   spec.description  = <<-DESC
                       面向 AI agent 的 iOS 远程调试 SDK 二进制发行包。
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0"
   spec.source       = {
     :http => "https://github.com/PsionicLab/AppTelepath-iOS/releases/download/#{spec.version}/Telepath-#{spec.version}.zip",
-    :sha256 => "3ca9c9f728f4722e7a8adfb2bc93738f24fc31fecd4a0221c674c9e5ae6f8669"
+    :sha256 => "9a14a949c7785415b9049ffff6a72459cbc97c4c754910e4559871ed552a6233"
   }
 
   spec.default_subspec = "Base"
@@ -24,10 +24,8 @@ Pod::Spec.new do |spec|
     sp.libraries = "c++", "sqlite3", "z"
   end
 
-  # Fabric Pressable 的动作留在 React Native 事件系统里；可选适配器把 ui.tap
-  # 转成宿主 click 事件。普通 UIKit App 继续安装 Base，不引入 RN 依赖。
+  # Fabric 适配器已编入基础二进制；该别名只表达宿主类型，不新增 RN Pod 依赖。
   spec.subspec "ReactNative" do |sp|
     sp.dependency "Telepath/Base"
-    sp.source_files = "Adapters/ReactNative/**/*.{h,m,mm}"
   end
 end

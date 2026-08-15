@@ -11,8 +11,8 @@ Install the public Beta from CocoaPods Trunk:
 ```ruby
 pod 'Telepath', '~> 2.1', :configurations => ['Debug']
 
-# React Native Fabric apps can use the optional tap adapter:
-# pod 'Telepath/ReactNative', '~> 2.1', :configurations => ['Debug']
+# React Native Fabric apps use the host adapter entry:
+# pod 'Telepath/ReactNative', '~> 2.1', :configurations => ['Debug', 'Staging']
 ```
 
 Ask an AppTelepath-authorized coding agent to configure the device credential in
