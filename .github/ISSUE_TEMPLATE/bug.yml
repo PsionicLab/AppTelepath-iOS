@@ -1,0 +1,25 @@
+name: Something behaves incorrectly
+description: A capability returns wrong data, fails, or affects the host app.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Redact captured data before posting.** See SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: SDK version
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened, and what should have happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: host
+    attributes:
+      label: Any effect on the host app

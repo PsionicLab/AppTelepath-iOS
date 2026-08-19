@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/PsionicLab/AppTelepath-iOS/security/policy
+    about: Please report vulnerabilities privately, not as a public issue.
+  - name: Product access and the hosted service
+    url: https://apptelepath.com/
+    about: Pricing, workspaces, and the remote MCP endpoint.

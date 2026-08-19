@@ -1,23 +1,23 @@
 # AppTelepath iOS SDK
 
-This repository distributes official binary releases of the AppTelepath iOS SDK. The SDK source code is not published here.
+**Remote debugging for iOS apps, built for AI coding agents.**
 
-AppTelepath lets AI coding agents inspect and debug an iOS app through the hosted AppTelepath service and remote MCP endpoint.
+[![CocoaPods](https://img.shields.io/cocoapods/v/AppTelepath.svg?label=pod&color=0a84ff)](https://cocoapods.org/pods/AppTelepath)
+[![Platform](https://img.shields.io/cocoapods/p/AppTelepath.svg?color=555)](https://cocoapods.org/pods/AppTelepath)
+[![iOS 13+](https://img.shields.io/badge/iOS-13%2B-555)](https://apptelepath.com/)
+[![License](https://img.shields.io/badge/license-Commercial-555)](LICENSE)
+
+Official binary releases of the AppTelepath iOS SDK. The source code is not published here.
+
+Add the SDK to a debug build, and an AI coding agent can inspect the running app remotely: logs, network traffic, view hierarchy, screenshots, database and sandbox, crash and performance reports, plus weak-network, GPS and push simulation. Agents connect through the hosted [AppTelepath](https://apptelepath.com/) service and its remote MCP endpoint; the same device can be driven from the web console.
 
 ## Install
 
-Install the public Beta from CocoaPods Trunk:
-
 ```ruby
-pod 'Telepath', '~> 2.1', :configurations => ['Debug']
-
-# React Native Fabric apps use the host adapter entry:
-# pod 'Telepath/ReactNative', '~> 2.1', :configurations => ['Debug', 'Staging']
+pod 'AppTelepath', '~> 3.0', :configurations => ['Debug']
 ```
 
-Ask an AppTelepath-authorized coding agent to configure the device credential in
-a gitignored local xcconfig or an existing secret store. Keep only build-setting
-placeholders in `Info.plist`, then start the SDK with one line:
+The pod is also published under its original name, `Telepath`. Both names install the same binary — pick one, do not add both. Either way the import is unchanged:
 
 ```swift
 #if TELEPATH_ENABLED
@@ -26,28 +26,20 @@ Telepath.start()
 #endif
 ```
 
-The full SDK shows a floating local debug entry automatically and reports the
-remote connection state. Write commands are enabled by default in trusted test
-builds; use `TLPAgentConfig.allowWrite = false` when a read-only session is
-required.
+Documentation, workspace setup and the MCP endpoint: **[apptelepath.com](https://apptelepath.com/)**
 
-Use the SDK only in trusted, authorized development and testing builds. Never
-commit a workspace credential or place it in an App Store configuration. If one
-Release configuration is shared with App Store archives, create a separate
-Internal or Staging configuration. TestFlight builds require explicit owner
-approval and the documented distribution opt-in because embedded test
-credentials can be extracted.
+## Use
+
+For trusted, authorized development and testing builds only. Do not place a workspace credential in an App Store configuration or commit one to source control.
 
 ## Releases
 
-Each GitHub Release contains the versioned XCFramework archive and its checksum. Release archives include the required third-party notices and license texts.
+Each [release](https://github.com/PsionicLab/AppTelepath-iOS/releases) contains the XCFramework archive with third-party notices and license texts. The published podspec pins the archive checksum.
 
-## Support and security
+## Support
 
-Use [GitHub Issues](https://github.com/PsionicLab/AppTelepath-iOS/issues) for SDK integration problems. Never include workspace tokens, private screenshots, captured traffic, or other customer data in a public issue.
-
-For product access and the hosted service, visit [apptelepath.com](https://apptelepath.com/).
+[Open an issue](https://github.com/PsionicLab/AppTelepath-iOS/issues) for integration problems — never include workspace tokens, captured traffic, screenshots or other private data. Security reports: see [SECURITY.md](SECURITY.md).
 
 ## License
 
-AppTelepath is proprietary software distributed by Yibi AI LLC. See [LICENSE](LICENSE). Third-party components remain governed by their accompanying licenses and notices.
+Proprietary software distributed by Yibi AI LLC. See [LICENSE](LICENSE). Third-party components remain governed by their accompanying licenses and notices.
