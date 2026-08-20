@@ -1,0 +1,19 @@
+/* 
+  TelepathLocalized.strings
+  Telepath
+
+  Copyright © 2021 Telepath Team. All rights reserved.
+*/
+
+//"App信息" = "App Info";
+//"手机信息" = "Device Info";
+//"权限信息" = "Authority Info";
+//"摘要" = "Summary";
+//"请求" = "Request";
+//"响应" = "Response";
+//"线程数" = "Thread Count";
+//"内存泄漏监控" = "Memory Leak";
+//"检测到内存泄漏：" = "Find Memory Leak:";
+//"清空" = "Clear";
+//"刷新" = "Refresh";
+//"暂无内存泄漏记录。" = "No memory leak record.";

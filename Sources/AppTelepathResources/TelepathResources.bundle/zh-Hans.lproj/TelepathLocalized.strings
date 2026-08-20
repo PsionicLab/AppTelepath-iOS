@@ -1,0 +1,26 @@
+/* 
+  TelepathLocalized.strings
+  Telepath
+
+  Copyright © 2021 Telepath Team. All rights reserved.
+*/
+
+"App信息" = "App信息";
+"手机信息" = "手机信息";
+"权限信息" = "权限信息";
+"Status Code" = "状态码";
+"Start Time" = "时间";
+"Duration" = "耗时";
+"Request Size" = "请求大小";
+"Query Parameters" = "Query 参数";
+"Response size" = "响应大小";
+"read" = "读取";
+"write" = "写入";
+"read count" = "读取次数";
+"write count" = "写入次数";
+"views" = "视图树";
+"select" = "选择";
+"move" = "移动";
+"detail" = "详情";
+"distance" = "相对距离";
+"close" = "关闭";
