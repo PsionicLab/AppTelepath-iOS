@@ -42,4 +42,4 @@ Each [release](https://github.com/PsionicLab/AppTelepath-iOS/releases) contains 
 
 ## License
 
-Proprietary software distributed by Yibi AI LLC. See [LICENSE](LICENSE). Third-party components remain governed by their accompanying licenses and notices.
+Proprietary software. See [LICENSE](LICENSE) for the licensing entity and terms. Third-party components remain governed by their accompanying licenses and notices.
